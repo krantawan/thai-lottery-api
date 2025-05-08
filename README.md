@@ -58,3 +58,6 @@ x-api-key: your-secret-api-key
 - `src/server.js` – Express API
 - `prisma/schema.prisma` – โครงสร้างฐานข้อมูล
 - `.env.example` – ตัวอย่างการตั้งค่า
+
+---
+> ใช้สำหรับศึกษาและฝึกฝนการเขียนโปรแกรมเท่านั้น
