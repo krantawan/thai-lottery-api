@@ -46,8 +46,7 @@ docker-compose up --build
 
 ---
 
-## 🔐 ป้องกัน API ด้วย API Key
-แนบ Header:
+## 🔐 API Key Example
 ```
 x-api-key: your-secret-api-key
 ```
