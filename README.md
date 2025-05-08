@@ -38,8 +38,6 @@ npm start
 ---
 
 ## 🐳 Docker
-
-### ใช้งาน
 ```bash
 docker-compose up --build
 ```
