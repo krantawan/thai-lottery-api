@@ -41,8 +41,6 @@ npm install
 docker-compose up -d
 ```
 
-> ✅ ตรวจสอบว่า PostgreSQL ทำงานที่ `localhost:5432` แล้ว
-
 ---
 
 ### 4. Run Prisma Migrate and Seed
