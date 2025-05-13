@@ -3,6 +3,13 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import lotteryRoutes from './routes/lottery.js';
 import { verifyApiKey } from './middleware/verifyApiKey.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, '../Public')));
 
 dotenv.config();
 
@@ -33,9 +40,13 @@ app.use(cors({
 app.use(express.json());
 app.use('/api/lottery',verifyApiKey ,lotteryRoutes);
 
+// app.get('/', (req, res) => {
+//   res.send('🎯 Thai Lottery API is running');
+// });
 app.get('/', (req, res) => {
-  res.send('🎯 Thai Lottery API is running');
+  res.sendFile(path.join(__dirname, '../Public/index.html'));
 });
+
 
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on http://localhost:${PORT}`);
