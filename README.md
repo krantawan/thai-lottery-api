@@ -60,8 +60,8 @@ npm start
 
 ## 🌐 API Endpoints
 
-- `GET /lottery/latest` → ดึงผลล่าสุด (Get latest lottery result)
-- `GET /lottery/:date` → ดึงผลตามวันที่ (Get result for a specific date) (เช่น `/lottery/2025-05-02`) 
+- `GET api/lottery/latest` → ดึงผลล่าสุด (Get latest lottery result)
+- `GET api/lottery/:date` → ดึงผลตามวันที่ (Get result for a specific date) (เช่น `/lottery/2025-05-02`) 
 
 ### 🔐 Required Header:
 ```
